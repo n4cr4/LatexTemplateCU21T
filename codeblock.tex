@@ -1,0 +1,56 @@
+\documentclass[a4j]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{listings,jlisting}
+\usepackage{multicol}
+% Different color code blocks can be used by changing the RGB values
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+\definecolor{commentcolor}{rgb}{0,0.6,0}
+\definecolor{keycolor}{rgb}{0,0,1}
+\definecolor{purplecolor}{rgb}{0.58,0,0.82}
+\definecolor{graycolor}{rgb}{0.6,0.6,0.6}
+\lstset{ 
+language={C}, 
+backgroundcolor=\color{backcolor},
+basicstyle={\small},
+identifierstyle={\small},
+commentstyle={\small\ttfamily \color{commentcolor}},
+keywordstyle=\color{keycolor},
+stringstyle=\color{purplecolor},
+numberstyle=\color{graycolor},
+ndkeywordstyle={\small}, 
+frame={tb}, 
+breakatwhitespace=false,         
+breaklines=true,                 
+keepspaces=true,                 
+numbers=left,       
+numbersep=5pt,                  
+showspaces=false,                
+showstringspaces=false,
+showtabs=false,                  
+tabsize=2,
+morecomment=[l]{//} 
+} 
+
+\begin{document}
+
+\section{texファイルに直接書き込む}
+\begin{lstlisting}[caption=helloworld.c, label=hello]
+#include<stdio.h>
+int main(){
+   /* Hello world! を出力する */
+   printf("Hello world!");
+}
+\end{lstlisting}
+ソースコード\ref{hello}はHello worldを出力するプログラムである．
+
+\section{コードのファイルパスを指定して利用する}
+\lstinputlisting[caption=hoge.c, label=hoge]{hoge.c}
+ソースコード\ref{hoge}は文字列this is hogeとhogeの値を出力するプログラムである．
+
+\section{行数を非表示にする、異なる言語を表示する}
+\lstinputlisting[language=sh, numbers=none]{sample.sh}
+コマンドの実行結果は上の通りである．
+
+\end{document}
+

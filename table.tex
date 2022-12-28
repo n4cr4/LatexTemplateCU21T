@@ -1,0 +1,46 @@
+\documentclass[a4j]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+\section{縦線を入れない表}
+\begin{table}[htbp]
+    \caption{大学共通テスト平均点推移(数学IA)}
+    \centering
+    \begin{tabular}{cc}
+        \hline \hline
+        年 & 平均点 \\ \hline
+        2015  & 61.27 \\
+        2016  & 55.27 \\
+        2017  & 61.12 \\
+        2018  & 61.91 \\
+        2019  & 59.68 \\ 
+        2020  & 51.88 \\
+        2021  & 57.68 \\
+        2022  & 37.96 \\ \hline
+    \end{tabular}
+    \label{test1}
+\end{table}
+表\ref{test1}は大学共通テストとセンター試験の平均点推移を示している．
+
+\section{縦線を入れる表}
+\begin{table}[htbp]
+    \caption{大学共通テスト平均点推移(数学IA)}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        年 & 平均点 \\ \hline
+        2015  & 61.27 \\
+        2016  & 55.27 \\
+        2017  & 61.12 \\
+        2018  & 61.91 \\
+        2019  & 59.68 \\ 
+        2020  & 51.88 \\
+        2021  & 57.68 \\
+        2022  & 37.96 \\ \hline
+    \end{tabular}
+    \label{test2}
+\end{table}
+表\ref{test2}も大学共通テストとセンター試験の平均点推移を示している．
+
+\end{document}

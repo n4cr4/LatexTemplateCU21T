@@ -1,0 +1,55 @@
+\documentclass[a4j]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[hang, small, bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+
+\begin{document}
+
+\section{図の表示}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[keepaspectratio]{justdoit.jpg}
+    \caption{justdoit}
+    \label{justdoit}
+\end{figure}
+図\ref{justdoit}はアメリカ俳優のシャイア・ラブーフによる激励動画の
+一部である．
+
+\section{複数枚表示}
+\begin{figure}[htbp]
+    \begin{minipage}[b]{0.45\linewidth} % 横幅の0.45を使う
+        \centering
+        \includegraphics[keepaspectratio, scale=0.5]{justdoit.jpg}
+        % オーバーフローしない程度のscaleに調整するだけ
+        \caption{justdoit1}
+        \label{justdoit1}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, scale=0.5]{justdoit.jpg}
+        \caption{justdoit2}
+    \end{minipage}
+\end{figure}
+図\ref{justdoit1}もアメリカ俳優のシャイア・ラブーフによる激励動画の
+一部である．
+
+\section{サブキャプションあり}
+\begin{figure}[htbp]
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, scale=0.5]{justdoit.jpg}
+        \subcaption{justdoit3}
+        \label{justdoit3}
+    \end{minipage}
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[keepaspectratio, scale=0.5]{justdoit.jpg}
+        \subcaption{justdoit4}
+    \end{minipage}
+    \caption{複数のjustdoit}
+\end{figure}
+図\ref{justdoit3}もアメリカ俳優のシャイア・ラブーフによる激励動画の
+一部である．
+
+\end{document}
