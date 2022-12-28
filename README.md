@@ -1,13 +1,13 @@
 # LatexTemplateCU21T
  
- n4cr4が普段利用しているテンプレート
+ n4cr4が普段利用しているテンプレートです．
  
 # DEMO
  
  このテンプレートを利用すれば画像のようなコードブロック、画像貼り付け、表の作成が可能です．
- <div style="text-align: center;"><img src="images/codeblock.png" /></div>
- <div style="text-align: center;"><img src="images/figure.png" /></div>
- <div style="text-align: center;"><img src="images/table.png" /></div>
+ <div align="center"><img src="images/codeblock.png" /></div>
+ <div align="center"><img src="images/figure.png" /></div>
+ <div align="center"><img src="images/table.png" /></div>
  
 # Requirement
  
