@@ -32,6 +32,7 @@ sudo apt install texlive-full
 ```bash
 curl https://osdn.net/projects/mytexpert/downloads/26068/jlisting.sty.bz2/ -o jlisting.sty.bz2 -L
 bzip2 -d jlisting.sty.bz2
+cd /usr/share/texlive/texmf-dist/tex/latex/listings/
 sudo mv ~/jlisting.sty ./
 sudo chmod 644 jlisting.sty
 sudo mktexlsr
